@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --champagen: #faf3e9;
+    --white: #ffffff;
+    --dark-1: #282c34;
+    --dark-2: #3d3d3d;
+    --acent: #d92950;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins";
+}
+
+
+/* classe utlitaire */
+
+.horizontal-padding{
+    padding-inline: 7%;
+    
+}
+
+p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--dark-2);
+}
+
+.btn{
+    background-color: #d92950;
+    width: 180px;
+    height: 54px;
+    border: 1px solid var(--acent);
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--white);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--white);
+    color: #282c34;
+}
+/* section header*/
+
+.navbar{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 15px;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.navbar a >img{
+    width: 120px;
+}
+
+.navbar .navbar__list  ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.navbar__list ul a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-2);
+}
+
+.navbar__list ul a:hover{
+    color: var(--acent);
+}
+.navbar__list ul .active{
+    color: var(--acent);
+}
+
+.navbar__list .icon{
+    width: 24px;
+    display: none;
+}
+/* ========== section hedear fin =========== */
+
+
+/* =============== section hero debut ============== */
+
+.hero{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30px;
+    gap: 10px;
+    padding-block: 15% 50px;
+   
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 515px;
+    height: auto;
+   
+    
+}
+
+.hero__content h1{
+    font-size: 2.25rem;
+    font-size: clamp(2.25rem, 1.1rem + 1.8vw, 2rem);
+    font-weight: 600;
+    max-width: 30ch;
+}
+
+
+
+img{
+    width: 100%;
+    max-width: 564px;
+    object-fit: cover;
+}
+
+
+/* ======= section option======== */
+.option{
+    background-color: var(--champagen);
+    
+    
+}
+.option__contenaire{
+  
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 508px;
+
+}
+
+.option__card{
+    width: 330px;
+    border: 1px solid var(--dark-1);
+    border-radius: 5px;
+    height: 240px;
+    text-align: center;
+    padding: 20px 15px;
+
+}
